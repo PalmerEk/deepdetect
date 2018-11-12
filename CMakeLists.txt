@@ -272,7 +272,7 @@ if (USE_TF)
       tensorflow_cc
       PREFIX tensorflow_cc
       INSTALL_DIR ${CMAKE_BINARY_DIR}
-      DOWNLOAD_COMMAND git clone https://github.com/beniz/tensorflow_cc.git
+      DOWNLOAD_COMMAND git clone https://github.com/nalyat/tensorflow_cc.git
       CONFIGURE_COMMAND cd tensorflow_cc && mkdir build && cd build && cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON .. && make && ln -s ${CMAKE_BINARY_DIR}/tensorflow_cc/src/tensorflow_cc/tensorflow_cc/build/tensorflow/tensorflow/contrib/makefile/gen/protobuf ${CMAKE_BINARY_DIR}/protobuf
       BUILD_COMMAND ""
       INSTALL_COMMAND ""
@@ -284,7 +284,7 @@ if (USE_TF)
       tensorflow_cc
       PREFIX tensorflow_cc
       INSTALL_DIR ${CMAKE_BINARY_DIR}
-      DOWNLOAD_COMMAND git clone https://github.com/beniz/tensorflow_cc.git
+      DOWNLOAD_COMMAND git clone https://github.com/nalyat/tensorflow_cc.git
       CONFIGURE_COMMAND cd tensorflow_cc && mkdir build && cd build && cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED_CPU=ON .. && make && ln -s ${CMAKE_BINARY_DIR}/tensorflow_cc/src/tensorflow_cc/tensorflow_cc/build/tensorflow/tensorflow/contrib/makefile/gen/protobuf ${CMAKE_BINARY_DIR}/protobuf
       BUILD_COMMAND ""
       INSTALL_COMMAND ""
